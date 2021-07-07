@@ -14,6 +14,7 @@ h3 {
 }
 h1 {
   font-size: 96px;
+  line-height:1;
 }
 
 h2 {
@@ -29,9 +30,7 @@ p {
   line-height: 1.5;
 }
 
-.last-name {
-  font-size: 50px;
-}
+
 
 .primary-link {
   background: var(--primary-color);
@@ -41,6 +40,9 @@ p {
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
+}
+.primary-link:hover{
+  color:white;
 }
 .navigation-links {
   display: flex;
@@ -58,13 +60,13 @@ p {
   text-decoration: none;
   text-transform: capitalize;
 }
-.weather-app {
-  margin-left: 0;
-  margin-right: 0;
+.secondary-link:hover{
+  color:var(--primary-color);
 }
 
+
 .about-paragraph {
-  margin: 25px 10px;
+  margin: 25px 50px;
 }
 
 .email-link {
@@ -77,38 +79,25 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+  color:var(--primary-color);
 }
 @media (max-width: 576px) {
-  .last-name {
-    font-size: 60px;
-  }
-  .home-heading {
-    line-height: 0.6;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  h3 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .email-link {
-    font-size: 20px;
-  }
-  .contact-me {
-    font-size: 40px;
-  }
-  .about-heading {
-    font-size: 70px;
-  }
-
+  
   h2,
   p,
   .app-link {
     text-align: center;
   }
-}
-@media (min-width: 576px) {
-  .last-name {
-    font-size: 96px;
+  h1{
+  font-size:70px;
   }
+  h2{
+    font-size:35px;
+  }
+  
+  .email-link {
+    font-size: 20px;
+  }
+  
+
 }
